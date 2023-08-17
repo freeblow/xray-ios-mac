@@ -1,4 +1,7 @@
-# An xray/v2ray iOS client
+# An xray/v2ray iOS and macOS client
+
+
+`Use Apple NetworkExtension`
 
 
 Download it and use it directly
