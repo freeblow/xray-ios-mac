@@ -12,9 +12,43 @@
 		FB3D486A2A8E3DF700B2671F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */; };
 		FB3D486E2A8E3DF800B2671F /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */; };
 		FB3D48732A8E3DF800B2671F /* xFutureTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FB3D487D2A8E3EA000B2671F /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D487B2A8E3EA000B2671F /* Future.framework */; };
-		FB3D487E2A8E3EA000B2671F /* FutureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */; };
 		FB3D487F2A8E3EBC00B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D485E2A8E28D700B2671F /* libresolv.tbd */; };
+		FB3D488C2A8E5E7D00B2671F /* YDVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */; };
+		FB3D488D2A8E5E7D00B2671F /* YDProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48812A8E5E7C00B2671F /* YDProtocolParser.m */; };
+		FB3D488E2A8E5E7D00B2671F /* YDVPNListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48822A8E5E7C00B2671F /* YDVPNListItem.m */; };
+		FB3D488F2A8E5E7D00B2671F /* YDVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48852A8E5E7C00B2671F /* YDVTextField.m */; };
+		FB3D48902A8E5E7D00B2671F /* YDVDashView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48892A8E5E7D00B2671F /* YDVDashView.m */; };
+		FB3D48912A8E5E7D00B2671F /* YDXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D488A2A8E5E7D00B2671F /* YDXButton.m */; };
+		FB3D48962A8E5F5A00B2671F /* LVFutureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */; };
+		FB3D48972A8E5F5A00B2671F /* LVFutureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */; };
+		FB3D48982A8E5F5A00B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
+		FB3D48992A8E5F5A00B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
+		FB3D489A2A8E5F7200B2671F /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
+		FB3D489B2A8E5F7200B2671F /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
+		FB3D489D2A8E5FBE00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
+		FB3D489E2A8E5FBE00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
+		FB3D48A72A8E600100B2671F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48A62A8E600100B2671F /* AppDelegate.m */; };
+		FB3D48AA2A8E600100B2671F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48A92A8E600100B2671F /* SceneDelegate.m */; };
+		FB3D48AD2A8E600100B2671F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48AC2A8E600100B2671F /* ViewController.m */; };
+		FB3D48B02A8E600100B2671F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D48AE2A8E600100B2671F /* Main.storyboard */; };
+		FB3D48B22A8E600200B2671F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3D48B12A8E600200B2671F /* Assets.xcassets */; };
+		FB3D48B52A8E600200B2671F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D48B32A8E600200B2671F /* LaunchScreen.storyboard */; };
+		FB3D48B82A8E600200B2671F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48B72A8E600200B2671F /* main.m */; };
+		FB3D48BC2A8E600E00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
+		FB3D48BD2A8E601900B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
+		FB3D48BE2A8E601900B2671F /* LVFutureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */; };
+		FB3D48C02A8E60E900B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48BF2A8E60E400B2671F /* libresolv.tbd */; };
+		FB3D48C12A8E615700B2671F /* YDVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */; };
+		FB3D48C72A8E618500B2671F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */; };
+		FB3D48D12A8E618500B2671F /* xFutureTunnel-iOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB3D48C62A8E618500B2671F /* xFutureTunnel-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB3D48D52A8E61A300B2671F /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */; };
+		FB3D48D62A8E61AB00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
+		FB3D48D72A8E61AB00B2671F /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
+		FB3D48D82A8E61AB00B2671F /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
+		FB3D48D92A8E63D100B2671F /* YDVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */; };
+		FB3D48DA2A8E63E700B2671F /* LVFutureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */; };
+		FB3D48DB2A8E63F700B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
+		FB3D48DC2A8E640400B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48BF2A8E60E400B2671F /* libresolv.tbd */; };
 		FB6B6B012A3C350000349B44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B002A3C350000349B44 /* AppDelegate.m */; };
 		FB6B6B062A3C350100349B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B052A3C350100349B44 /* Assets.xcassets */; };
 		FB6B6B092A3C350100349B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B072A3C350100349B44 /* Main.storyboard */; };
@@ -25,8 +59,6 @@
 		FB6B6B312A3C36BC00349B44 /* YoFuture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */; };
 		FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B362A3C3E8B00349B44 /* ViewController.m */; };
-		FB6B6B3C2A3C456100349B44 /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
-		FB6B6B3D2A3C456100349B44 /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +68,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FB3D48672A8E3DF700B2671F;
 			remoteInfo = xFutureTunnel;
+		};
+		FB3D48CE2A8E618500B2671F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB6B6AF42A3C350000349B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3D48C52A8E618500B2671F;
+			remoteInfo = "xFutureTunnel-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,6 +86,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				FB3D48732A8E3DF800B2671F /* xFutureTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48D02A8E618500B2671F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB3D48D12A8E618500B2671F /* xFutureTunnel-iOS.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,8 +128,39 @@
 		FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
 		FB3D486F2A8E3DF800B2671F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB3D48702A8E3DF800B2671F /* xFutureTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xFutureTunnel.entitlements; sourceTree = "<group>"; };
-		FB3D487B2A8E3EA000B2671F /* Future.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Future.framework; sourceTree = "<group>"; };
-		FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FutureSDK.framework; sourceTree = "<group>"; };
+		FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVPNManager.m; sourceTree = "<group>"; };
+		FB3D48812A8E5E7C00B2671F /* YDProtocolParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDProtocolParser.m; sourceTree = "<group>"; };
+		FB3D48822A8E5E7C00B2671F /* YDVPNListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVPNListItem.m; sourceTree = "<group>"; };
+		FB3D48832A8E5E7C00B2671F /* YDVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVTextField.h; sourceTree = "<group>"; };
+		FB3D48842A8E5E7C00B2671F /* YDProtocolParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDProtocolParser.h; sourceTree = "<group>"; };
+		FB3D48852A8E5E7C00B2671F /* YDVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVTextField.m; sourceTree = "<group>"; };
+		FB3D48862A8E5E7C00B2671F /* YDXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDXButton.h; sourceTree = "<group>"; };
+		FB3D48872A8E5E7C00B2671F /* YDVPNListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVPNListItem.h; sourceTree = "<group>"; };
+		FB3D48882A8E5E7D00B2671F /* YDVDashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVDashView.h; sourceTree = "<group>"; };
+		FB3D48892A8E5E7D00B2671F /* YDVDashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDVDashView.m; sourceTree = "<group>"; };
+		FB3D488A2A8E5E7D00B2671F /* YDXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDXButton.m; sourceTree = "<group>"; };
+		FB3D488B2A8E5E7D00B2671F /* YDVPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDVPNManager.h; sourceTree = "<group>"; };
+		FB3D48922A8E5F5A00B2671F /* LVFutureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVFutureManager.h; sourceTree = "<group>"; };
+		FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVFutureManager.m; sourceTree = "<group>"; };
+		FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolParser.m; sourceTree = "<group>"; };
+		FB3D48952A8E5F5A00B2671F /* ProtocolParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolParser.h; sourceTree = "<group>"; };
+		FB3D489C2A8E5FBE00B2671F /* Future.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Future.xcframework; path = xNetFuture/Future.xcframework; sourceTree = SOURCE_ROOT; };
+		FB3D48A32A8E600100B2671F /* xNetFuture-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xNetFuture-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3D48A52A8E600100B2671F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB3D48A62A8E600100B2671F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB3D48A82A8E600100B2671F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FB3D48A92A8E600100B2671F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FB3D48AB2A8E600100B2671F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB3D48AC2A8E600100B2671F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB3D48AF2A8E600100B2671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB3D48B12A8E600200B2671F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB3D48B42A8E600200B2671F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB3D48B62A8E600200B2671F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3D48B72A8E600200B2671F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB3D48BF2A8E60E400B2671F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		FB3D48C62A8E618500B2671F /* xFutureTunnel-iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "xFutureTunnel-iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3D48CC2A8E618500B2671F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3D48CD2A8E618500B2671F /* xFutureTunnel_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xFutureTunnel_iOS.entitlements; sourceTree = "<group>"; };
 		FB6B6AFC2A3C350000349B44 /* xNetFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xNetFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B6AFF2A3C350000349B44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB6B6B002A3C350000349B44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,10 +183,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3D487E2A8E3EA000B2671F /* FutureSDK.framework in Frameworks */,
 				FB3D486A2A8E3DF700B2671F /* NetworkExtension.framework in Frameworks */,
-				FB3D487D2A8E3EA000B2671F /* Future.framework in Frameworks */,
 				FB3D487F2A8E3EBC00B2671F /* libresolv.tbd in Frameworks */,
+				FB3D489E2A8E5FBE00B2671F /* Future.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48A02A8E600100B2671F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48BC2A8E600E00B2671F /* Future.xcframework in Frameworks */,
+				FB3D48C02A8E60E900B2671F /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48C32A8E618500B2671F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48D62A8E61AB00B2671F /* Future.xcframework in Frameworks */,
+				FB3D48C72A8E618500B2671F /* NetworkExtension.framework in Frameworks */,
+				FB3D48DC2A8E640400B2671F /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +216,7 @@
 				FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */,
 				32A5CDD2E7B3ADF8728276D5 /* Pods_xNetFuture.framework in Frameworks */,
 				FB3D485F2A8E28E200B2671F /* libresolv.tbd in Frameworks */,
+				FB3D489D2A8E5FBE00B2671F /* Future.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +237,40 @@
 			children = (
 				FB3D486C2A8E3DF800B2671F /* PacketTunnelProvider.h */,
 				FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */,
-				FB3D487B2A8E3EA000B2671F /* Future.framework */,
-				FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */,
+				FB3D489C2A8E5FBE00B2671F /* Future.xcframework */,
+				FB6B6B3A2A3C456100349B44 /* geoip.dat */,
+				FB6B6B3B2A3C456100349B44 /* geosite.dat */,
 				FB3D486F2A8E3DF800B2671F /* Info.plist */,
 				FB3D48702A8E3DF800B2671F /* xFutureTunnel.entitlements */,
 			);
 			path = xFutureTunnel;
+			sourceTree = "<group>";
+		};
+		FB3D48A42A8E600100B2671F /* xNetFuture-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D48A52A8E600100B2671F /* AppDelegate.h */,
+				FB3D48A62A8E600100B2671F /* AppDelegate.m */,
+				FB3D48A82A8E600100B2671F /* SceneDelegate.h */,
+				FB3D48A92A8E600100B2671F /* SceneDelegate.m */,
+				FB3D48AB2A8E600100B2671F /* ViewController.h */,
+				FB3D48AC2A8E600100B2671F /* ViewController.m */,
+				FB3D48AE2A8E600100B2671F /* Main.storyboard */,
+				FB3D48B12A8E600200B2671F /* Assets.xcassets */,
+				FB3D48B32A8E600200B2671F /* LaunchScreen.storyboard */,
+				FB3D48B62A8E600200B2671F /* Info.plist */,
+				FB3D48B72A8E600200B2671F /* main.m */,
+			);
+			path = "xNetFuture-iOS";
+			sourceTree = "<group>";
+		};
+		FB3D48C82A8E618500B2671F /* xFutureTunnel-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D48CC2A8E618500B2671F /* Info.plist */,
+				FB3D48CD2A8E618500B2671F /* xFutureTunnel_iOS.entitlements */,
+			);
+			path = "xFutureTunnel-iOS";
 			sourceTree = "<group>";
 		};
 		FB6B6AF32A3C350000349B44 = {
@@ -150,6 +278,8 @@
 			children = (
 				FB6B6AFE2A3C350000349B44 /* xNetFuture */,
 				FB3D486B2A8E3DF800B2671F /* xFutureTunnel */,
+				FB3D48A42A8E600100B2671F /* xNetFuture-iOS */,
+				FB3D48C82A8E618500B2671F /* xFutureTunnel-iOS */,
 				FB6B6AFD2A3C350000349B44 /* Products */,
 				FB6B6B1B2A3C359100349B44 /* Frameworks */,
 				1240172F08A98BE98C5BDC53 /* Pods */,
@@ -161,6 +291,8 @@
 			children = (
 				FB6B6AFC2A3C350000349B44 /* xNetFuture.app */,
 				FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */,
+				FB3D48A32A8E600100B2671F /* xNetFuture-iOS.app */,
+				FB3D48C62A8E618500B2671F /* xFutureTunnel-iOS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,8 +304,22 @@
 				FB6B6B002A3C350000349B44 /* AppDelegate.m */,
 				FB6B6B372A3C3E8B00349B44 /* ViewController.h */,
 				FB6B6B362A3C3E8B00349B44 /* ViewController.m */,
-				FB6B6B3A2A3C456100349B44 /* geoip.dat */,
-				FB6B6B3B2A3C456100349B44 /* geosite.dat */,
+				FB3D48842A8E5E7C00B2671F /* YDProtocolParser.h */,
+				FB3D48812A8E5E7C00B2671F /* YDProtocolParser.m */,
+				FB3D48882A8E5E7D00B2671F /* YDVDashView.h */,
+				FB3D48892A8E5E7D00B2671F /* YDVDashView.m */,
+				FB3D48872A8E5E7C00B2671F /* YDVPNListItem.h */,
+				FB3D48822A8E5E7C00B2671F /* YDVPNListItem.m */,
+				FB3D488B2A8E5E7D00B2671F /* YDVPNManager.h */,
+				FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */,
+				FB3D48922A8E5F5A00B2671F /* LVFutureManager.h */,
+				FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */,
+				FB3D48952A8E5F5A00B2671F /* ProtocolParser.h */,
+				FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */,
+				FB3D48832A8E5E7C00B2671F /* YDVTextField.h */,
+				FB3D48852A8E5E7C00B2671F /* YDVTextField.m */,
+				FB3D48862A8E5E7C00B2671F /* YDXButton.h */,
+				FB3D488A2A8E5E7D00B2671F /* YDXButton.m */,
 				FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */,
 				FB6B6B052A3C350100349B44 /* Assets.xcassets */,
 				FB6B6B072A3C350100349B44 /* Main.storyboard */,
@@ -187,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3D485E2A8E28D700B2671F /* libresolv.tbd */,
+				FB3D48BF2A8E60E400B2671F /* libresolv.tbd */,
 				FB3D485D2A8E28BA00B2671F /* libresolv.9.tbd */,
 				FB3D485C2A8E28B200B2671F /* libiconv.2.4.0.tbd */,
 				FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */,
@@ -215,6 +362,42 @@
 			name = xFutureTunnel;
 			productName = xFutureTunnel;
 			productReference = FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FB3D48A22A8E600100B2671F /* xNetFuture-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3D48B92A8E600200B2671F /* Build configuration list for PBXNativeTarget "xNetFuture-iOS" */;
+			buildPhases = (
+				FB3D489F2A8E600100B2671F /* Sources */,
+				FB3D48A02A8E600100B2671F /* Frameworks */,
+				FB3D48A12A8E600100B2671F /* Resources */,
+				FB3D48D02A8E618500B2671F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3D48CF2A8E618500B2671F /* PBXTargetDependency */,
+			);
+			name = "xNetFuture-iOS";
+			productName = "xNetFuture-iOS";
+			productReference = FB3D48A32A8E600100B2671F /* xNetFuture-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB3D48C52A8E618500B2671F /* xFutureTunnel-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3D48D22A8E618500B2671F /* Build configuration list for PBXNativeTarget "xFutureTunnel-iOS" */;
+			buildPhases = (
+				FB3D48C22A8E618500B2671F /* Sources */,
+				FB3D48C32A8E618500B2671F /* Frameworks */,
+				FB3D48C42A8E618500B2671F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xFutureTunnel-iOS";
+			productName = "xFutureTunnel-iOS";
+			productReference = FB3D48C62A8E618500B2671F /* xFutureTunnel-iOS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		FB6B6AFB2A3C350000349B44 /* xNetFuture */ = {
@@ -251,6 +434,12 @@
 					FB3D48672A8E3DF700B2671F = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					FB3D48A22A8E600100B2671F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB3D48C52A8E618500B2671F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					FB6B6AFB2A3C350000349B44 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -272,6 +461,8 @@
 			targets = (
 				FB6B6AFB2A3C350000349B44 /* xNetFuture */,
 				FB3D48672A8E3DF700B2671F /* xFutureTunnel */,
+				FB3D48A22A8E600100B2671F /* xNetFuture-iOS */,
+				FB3D48C52A8E618500B2671F /* xFutureTunnel-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +472,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3D489B2A8E5F7200B2671F /* geosite.dat in Resources */,
+				FB3D489A2A8E5F7200B2671F /* geoip.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48A12A8E600100B2671F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48B52A8E600200B2671F /* LaunchScreen.storyboard in Resources */,
+				FB3D48B22A8E600200B2671F /* Assets.xcassets in Resources */,
+				FB3D48B02A8E600100B2671F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48C42A8E618500B2671F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48D82A8E61AB00B2671F /* geosite.dat in Resources */,
+				FB3D48D72A8E61AB00B2671F /* geoip.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +500,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6B6B3C2A3C456100349B44 /* geoip.dat in Resources */,
 				FB6B6B062A3C350100349B44 /* Assets.xcassets in Resources */,
 				FB6B6B092A3C350100349B44 /* Main.storyboard in Resources */,
-				FB6B6B3D2A3C456100349B44 /* geosite.dat in Resources */,
 				FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +555,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3D48992A8E5F5A00B2671F /* ProtocolParser.m in Sources */,
+				FB3D48972A8E5F5A00B2671F /* LVFutureManager.m in Sources */,
 				FB3D486E2A8E3DF800B2671F /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D489F2A8E600100B2671F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48AD2A8E600100B2671F /* ViewController.m in Sources */,
+				FB3D48BD2A8E601900B2671F /* ProtocolParser.m in Sources */,
+				FB3D48C12A8E615700B2671F /* YDVPNManager.m in Sources */,
+				FB3D48BE2A8E601900B2671F /* LVFutureManager.m in Sources */,
+				FB3D48A72A8E600100B2671F /* AppDelegate.m in Sources */,
+				FB3D48B82A8E600200B2671F /* main.m in Sources */,
+				FB3D48AA2A8E600100B2671F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3D48C22A8E618500B2671F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D48D52A8E61A300B2671F /* PacketTunnelProvider.m in Sources */,
+				FB3D48D92A8E63D100B2671F /* YDVPNManager.m in Sources */,
+				FB3D48DB2A8E63F700B2671F /* ProtocolParser.m in Sources */,
+				FB3D48DA2A8E63E700B2671F /* LVFutureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,8 +590,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3D488D2A8E5E7D00B2671F /* YDProtocolParser.m in Sources */,
 				FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */,
+				FB3D488E2A8E5E7D00B2671F /* YDVPNListItem.m in Sources */,
+				FB3D48982A8E5F5A00B2671F /* ProtocolParser.m in Sources */,
+				FB3D488F2A8E5E7D00B2671F /* YDVTextField.m in Sources */,
+				FB3D488C2A8E5E7D00B2671F /* YDVPNManager.m in Sources */,
 				FB6B6B0B2A3C350100349B44 /* main.m in Sources */,
+				FB3D48962A8E5F5A00B2671F /* LVFutureManager.m in Sources */,
+				FB3D48902A8E5E7D00B2671F /* YDVDashView.m in Sources */,
+				FB3D48912A8E5E7D00B2671F /* YDXButton.m in Sources */,
 				FB6B6B012A3C350000349B44 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,9 +612,30 @@
 			target = FB3D48672A8E3DF700B2671F /* xFutureTunnel */;
 			targetProxy = FB3D48712A8E3DF800B2671F /* PBXContainerItemProxy */;
 		};
+		FB3D48CF2A8E618500B2671F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3D48C52A8E618500B2671F /* xFutureTunnel-iOS */;
+			targetProxy = FB3D48CE2A8E618500B2671F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FB3D48AE2A8E600100B2671F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB3D48AF2A8E600100B2671F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB3D48B32A8E600200B2671F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB3D48B42A8E600200B2671F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		FB6B6B072A3C350100349B44 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +705,120 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		FB3D48BA2A8E600200B2671F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "xNetFuture-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.linkv.xNetFuture-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB3D48BB2A8E600200B2671F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "xNetFuture-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.linkv.xNetFuture-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB3D48D32A8E618500B2671F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "xFutureTunnel-iOS/xFutureTunnel_iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "xFutureTunnel-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "xFutureTunnel-iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.linkv.xNetFuture-iOS.xFutureTunnel-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB3D48D42A8E618500B2671F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "xFutureTunnel-iOS/xFutureTunnel_iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "xFutureTunnel-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "xFutureTunnel-iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.linkv.xNetFuture-iOS.xFutureTunnel-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -617,6 +997,24 @@
 			buildConfigurations = (
 				FB3D48752A8E3DF800B2671F /* Debug */,
 				FB3D48762A8E3DF800B2671F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3D48B92A8E600200B2671F /* Build configuration list for PBXNativeTarget "xNetFuture-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3D48BA2A8E600200B2671F /* Debug */,
+				FB3D48BB2A8E600200B2671F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3D48D22A8E618500B2671F /* Build configuration list for PBXNativeTarget "xFutureTunnel-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3D48D32A8E618500B2671F /* Debug */,
+				FB3D48D42A8E618500B2671F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

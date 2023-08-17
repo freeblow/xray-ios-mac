@@ -9,7 +9,7 @@
 #import <YoFuture/YoFuture.h>
 #import <MMKV/MMKV.h>
 
-@interface AppDelegate ()<YDVPNManagerDelegate>
+@interface AppDelegate ()
 {
     MMKV *_defaultMMKV;
 }
@@ -22,7 +22,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    YDVPNManager.sharedManager.delegate = self;
     [MMKV initializeMMKV:self.defaultDocDir];
     const char* cryptoKey = "lovelike08150802";
     _defaultMMKV = [MMKV defaultMMKVWithCryptKey:[NSData dataWithBytesNoCopy:(void *)cryptoKey length:16 freeWhenDone:NO]];

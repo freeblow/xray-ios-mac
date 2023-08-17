@@ -10,6 +10,9 @@
 #import <YoFuture/YoFuture.h>
 #import <Masonry/Masonry.h>
 #import <CoreImage/CIFilterBuiltins.h>
+#import <NetworkExtension/NetworkExtension.h>
+#import "AppDelegate.h"
+#import "YDVPNManager.h"
 
 @interface NSData (XBase64)
 + (NSData *)dataWithBase64EncodedStringx:(NSString *)string;
@@ -45,7 +48,7 @@
 NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
 
 
-@interface ViewController ()<YDVTextFieldDelegate, NSTableViewDelegate, NSTableViewDataSource, YDVPNListItemDelegate>
+@interface ViewController ()<NSTextFieldDelegate, NSTableViewDelegate, NSTableViewDataSource, YDVPNListItemDelegate>
 @property (weak) IBOutlet NSView *controlBackgroundView;
 @property (weak) IBOutlet YDVPopTextField *vpnTextField;
 @property (weak) IBOutlet YDXButton *startConnectButton;
@@ -82,6 +85,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     dispatch_queue_t mPingQueue;
     dispatch_queue_t mWorkQueue;
     BOOL mConnected;
+    id<YDVPNManagerDelegate> _delegate;
 }
 
 - (void)viewDidLoad {
@@ -106,7 +110,8 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     self.scrollView.wantsLayer = YES;
     self.scrollView.layer.cornerRadius = 12;
     self.dataSource = [NSMutableArray new];
-    self.dataSource = (NSMutableArray *)[[YDVPNManager sharedManager].delegate getObjectOfClass:NSMutableArray.class forKey:kYDApplicationVPNListKey];
+    _delegate = (id<YDVPNManagerDelegate>)NSApp.delegate;
+    self.dataSource = (NSMutableArray *)[_delegate getObjectOfClass:NSMutableArray.class forKey:kYDApplicationVPNListKey];
     if (!self.dataSource) {
         self.dataSource = [NSMutableArray new];
     }
@@ -147,7 +152,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectionStatusChanged:) name:NEVPNStatusDidChangeNotification object:manager.connection];
         }
     }];
-    self.globalModeButton.selected = [YDVPNManager.sharedManager.delegate getBoolForKey:@"kYDApplicationGlobalVPNModeEnable" defaultValue:NO];
+    self.globalModeButton.selected = [_delegate getBoolForKey:@"kYDApplicationGlobalVPNModeEnable" defaultValue:NO];
 }
 
 -(void)scrollViewBoundsDidChange:(NSNotification *)notification {
@@ -250,7 +255,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
 
 - (IBAction)globalModeButtonClick:(id)sender {
     self.globalModeButton.selected = !self.globalModeButton.selected;
-    [YDVPNManager.sharedManager.delegate setBool:self.globalModeButton.selected forKey:@"kYDApplicationGlobalVPNModeEnable"];
+    [_delegate setBool:self.globalModeButton.selected forKey:@"kYDApplicationGlobalVPNModeEnable"];
 }
 
 -(BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row {
@@ -270,7 +275,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     rowIndexes = [NSIndexSet indexSetWithIndex:row];
     [self.tableView reloadDataForRowIndexes:rowIndexes columnIndexes:columnIndexes];
     
-    [[YDVPNManager sharedManager].delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
+    [_delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
     selectedRow = row;
     
     NSString *uri = selected[@"uri"];
@@ -283,7 +288,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     NSInteger row = [self.dataSource indexOfObject:info];
     if (row != NSNotFound) {
         [self.dataSource removeObjectAtIndex:row];
-        [[YDVPNManager sharedManager].delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
+        [_delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
         NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:row];
         [self.tableView removeRowsAtIndexes:indexSet withAnimation:(NSTableViewAnimationSlideRight)];
     }
@@ -319,7 +324,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
 //
 //    }];
     if (!currentConfiguration) {
-        [YDVPNManager.sharedManager.delegate makeToast:NSLocalizedString(@"Configuration Invaild", nil)];
+        [_delegate makeToast:NSLocalizedString(@"Configuration Invaild", nil)];
         return;
     }
     __block BOOL found = NO;
@@ -334,10 +339,10 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
         NSDictionary *uri = @{@"uri":currentConfiguration, @"selected":@(YES)};
         [self.dataSource addObject:uri];
         [self.tableView reloadData];
-        [[YDVPNManager sharedManager].delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
+        [_delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
     }
     else {
-        [[YDVPNManager sharedManager].delegate makeToast:NSLocalizedString(@"Configuration Added", nil) inView:self.view maxWidth:120];
+        [_delegate makeToast:NSLocalizedString(@"Configuration Added", nil) inView:self.view maxWidth:120];
     }
 }
 
@@ -384,7 +389,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
             NSDictionary *info = @{@"uri":uri, @"selected":@(YES)};
             [self.dataSource addObject:info];
             selectedRow = self.dataSource.count - 1;
-            [[YDVPNManager sharedManager].delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
+            [_delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
             [self.tableView reloadData];
         }
     }
@@ -417,7 +422,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
                 }
             }];
         }
-        [[YDVPNManager sharedManager].delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
+        [_delegate setObject:self.dataSource forKey:kYDApplicationVPNListKey];
         [self.tableView reloadData];
     }
     if (!configuration) {

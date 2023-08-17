@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:YoFuture/YoFuture.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../IMWorkspace/Masonry/Masonry.xcodeproj">
    </FileRef>
    <FileRef

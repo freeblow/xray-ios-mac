@@ -1,0 +1,8 @@
+framework module "Future" {
+	header "ref.h"
+    header "Future.objc.h"
+    header "Universe.objc.h"
+    header "Future.h"
+
+    export *
+}

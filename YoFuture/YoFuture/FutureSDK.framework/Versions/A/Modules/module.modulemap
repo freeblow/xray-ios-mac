@@ -1,6 +1,0 @@
-framework module FutureSDK {
-  umbrella header "FutureSDK.h"
-
-  export *
-  module * { export * }
-}
