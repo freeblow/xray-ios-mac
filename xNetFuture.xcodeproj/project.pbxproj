@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A5CDD2E7B3ADF8728276D5 /* Pods_xNetFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6CE664E05A99EA280E02A6 /* Pods_xNetFuture.framework */; };
+		FB3D485F2A8E28E200B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D485E2A8E28D700B2671F /* libresolv.tbd */; };
+		FB3D486A2A8E3DF700B2671F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */; };
+		FB3D486E2A8E3DF800B2671F /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */; };
+		FB3D48732A8E3DF800B2671F /* xFutureTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB3D487D2A8E3EA000B2671F /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D487B2A8E3EA000B2671F /* Future.framework */; };
+		FB3D487E2A8E3EA000B2671F /* FutureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */; };
+		FB3D487F2A8E3EBC00B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D485E2A8E28D700B2671F /* libresolv.tbd */; };
+		FB6B6B012A3C350000349B44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B002A3C350000349B44 /* AppDelegate.m */; };
+		FB6B6B062A3C350100349B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B052A3C350100349B44 /* Assets.xcassets */; };
+		FB6B6B092A3C350100349B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B072A3C350100349B44 /* Main.storyboard */; };
+		FB6B6B0B2A3C350100349B44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B0A2A3C350100349B44 /* main.m */; };
+		FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2C2A3C36B800349B44 /* Masonry.framework */; };
+		FB6B6B2E2A3C36B800349B44 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2C2A3C36B800349B44 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB6B6B302A3C36BC00349B44 /* YoFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */; };
+		FB6B6B312A3C36BC00349B44 /* YoFuture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */; };
+		FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B362A3C3E8B00349B44 /* ViewController.m */; };
+		FB6B6B3C2A3C456100349B44 /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
+		FB6B6B3D2A3C456100349B44 /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB3D48712A8E3DF800B2671F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB6B6AF42A3C350000349B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3D48672A8E3DF700B2671F;
+			remoteInfo = xFutureTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB3D48772A8E3DF800B2671F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB3D48732A8E3DF800B2671F /* xFutureTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6B6B1E2A3C359100349B44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB6B6B2E2A3C36B800349B44 /* Masonry.framework in Embed Frameworks */,
+				FB6B6B312A3C36BC00349B44 /* YoFuture.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D6CE664E05A99EA280E02A6 /* Pods_xNetFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xNetFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C433548FDA88549F543C1B12 /* Pods-xNetFuture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xNetFuture.release.xcconfig"; path = "Target Support Files/Pods-xNetFuture/Pods-xNetFuture.release.xcconfig"; sourceTree = "<group>"; };
+		EF4FB235D9E89FD0CC7F5E9F /* Pods-xNetFuture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xNetFuture.debug.xcconfig"; path = "Target Support Files/Pods-xNetFuture/Pods-xNetFuture.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3D485C2A8E28B200B2671F /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		FB3D485D2A8E28BA00B2671F /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		FB3D485E2A8E28D700B2671F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = xFutureTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		FB3D486C2A8E3DF800B2671F /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		FB3D486F2A8E3DF800B2671F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3D48702A8E3DF800B2671F /* xFutureTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xFutureTunnel.entitlements; sourceTree = "<group>"; };
+		FB3D487B2A8E3EA000B2671F /* Future.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Future.framework; sourceTree = "<group>"; };
+		FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FutureSDK.framework; sourceTree = "<group>"; };
+		FB6B6AFC2A3C350000349B44 /* xNetFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xNetFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6B6AFF2A3C350000349B44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB6B6B002A3C350000349B44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB6B6B052A3C350100349B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB6B6B082A3C350100349B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB6B6B0A2A3C350100349B44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB6B6B0C2A3C350100349B44 /* xNetFuture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xNetFuture.entitlements; sourceTree = "<group>"; };
+		FB6B6B2C2A3C36B800349B44 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDVPNListItem.xib; sourceTree = "<group>"; };
+		FB6B6B362A3C3E8B00349B44 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB6B6B372A3C3E8B00349B44 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB6B6B392A3C445200349B44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FB6B6B3A2A3C456100349B44 /* geoip.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geoip.dat; sourceTree = "<group>"; };
+		FB6B6B3B2A3C456100349B44 /* geosite.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geosite.dat; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB3D48652A8E3DF700B2671F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D487E2A8E3EA000B2671F /* FutureSDK.framework in Frameworks */,
+				FB3D486A2A8E3DF700B2671F /* NetworkExtension.framework in Frameworks */,
+				FB3D487D2A8E3EA000B2671F /* Future.framework in Frameworks */,
+				FB3D487F2A8E3EBC00B2671F /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6B6AF92A3C350000349B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B6B302A3C36BC00349B44 /* YoFuture.framework in Frameworks */,
+				FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */,
+				32A5CDD2E7B3ADF8728276D5 /* Pods_xNetFuture.framework in Frameworks */,
+				FB3D485F2A8E28E200B2671F /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1240172F08A98BE98C5BDC53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FB235D9E89FD0CC7F5E9F /* Pods-xNetFuture.debug.xcconfig */,
+				C433548FDA88549F543C1B12 /* Pods-xNetFuture.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB3D486B2A8E3DF800B2671F /* xFutureTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D486C2A8E3DF800B2671F /* PacketTunnelProvider.h */,
+				FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */,
+				FB3D487B2A8E3EA000B2671F /* Future.framework */,
+				FB3D487C2A8E3EA000B2671F /* FutureSDK.framework */,
+				FB3D486F2A8E3DF800B2671F /* Info.plist */,
+				FB3D48702A8E3DF800B2671F /* xFutureTunnel.entitlements */,
+			);
+			path = xFutureTunnel;
+			sourceTree = "<group>";
+		};
+		FB6B6AF32A3C350000349B44 = {
+			isa = PBXGroup;
+			children = (
+				FB6B6AFE2A3C350000349B44 /* xNetFuture */,
+				FB3D486B2A8E3DF800B2671F /* xFutureTunnel */,
+				FB6B6AFD2A3C350000349B44 /* Products */,
+				FB6B6B1B2A3C359100349B44 /* Frameworks */,
+				1240172F08A98BE98C5BDC53 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FB6B6AFD2A3C350000349B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B6AFC2A3C350000349B44 /* xNetFuture.app */,
+				FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB6B6AFE2A3C350000349B44 /* xNetFuture */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B6AFF2A3C350000349B44 /* AppDelegate.h */,
+				FB6B6B002A3C350000349B44 /* AppDelegate.m */,
+				FB6B6B372A3C3E8B00349B44 /* ViewController.h */,
+				FB6B6B362A3C3E8B00349B44 /* ViewController.m */,
+				FB6B6B3A2A3C456100349B44 /* geoip.dat */,
+				FB6B6B3B2A3C456100349B44 /* geosite.dat */,
+				FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */,
+				FB6B6B052A3C350100349B44 /* Assets.xcassets */,
+				FB6B6B072A3C350100349B44 /* Main.storyboard */,
+				FB6B6B0A2A3C350100349B44 /* main.m */,
+				FB6B6B0C2A3C350100349B44 /* xNetFuture.entitlements */,
+			);
+			path = xNetFuture;
+			sourceTree = "<group>";
+		};
+		FB6B6B1B2A3C359100349B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D485E2A8E28D700B2671F /* libresolv.tbd */,
+				FB3D485D2A8E28BA00B2671F /* libresolv.9.tbd */,
+				FB3D485C2A8E28B200B2671F /* libiconv.2.4.0.tbd */,
+				FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */,
+				FB6B6B2C2A3C36B800349B44 /* Masonry.framework */,
+				1D6CE664E05A99EA280E02A6 /* Pods_xNetFuture.framework */,
+				FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB3D48672A8E3DF700B2671F /* xFutureTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3D48742A8E3DF800B2671F /* Build configuration list for PBXNativeTarget "xFutureTunnel" */;
+			buildPhases = (
+				FB3D48642A8E3DF700B2671F /* Sources */,
+				FB3D48652A8E3DF700B2671F /* Frameworks */,
+				FB3D48662A8E3DF700B2671F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xFutureTunnel;
+			productName = xFutureTunnel;
+			productReference = FB3D48682A8E3DF700B2671F /* xFutureTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FB6B6AFB2A3C350000349B44 /* xNetFuture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6B6B0F2A3C350100349B44 /* Build configuration list for PBXNativeTarget "xNetFuture" */;
+			buildPhases = (
+				850AFAF67A35CBA280939C04 /* [CP] Check Pods Manifest.lock */,
+				FB6B6AF82A3C350000349B44 /* Sources */,
+				FB6B6AF92A3C350000349B44 /* Frameworks */,
+				FB6B6AFA2A3C350000349B44 /* Resources */,
+				FB6B6B1E2A3C359100349B44 /* Embed Frameworks */,
+				E23998363168DED0E1A64535 /* [CP] Embed Pods Frameworks */,
+				FB3D48772A8E3DF800B2671F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3D48722A8E3DF800B2671F /* PBXTargetDependency */,
+			);
+			name = xNetFuture;
+			productName = xNetFuture;
+			productReference = FB6B6AFC2A3C350000349B44 /* xNetFuture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB6B6AF42A3C350000349B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FB3D48672A8E3DF700B2671F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB6B6AFB2A3C350000349B44 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FB6B6AF72A3C350000349B44 /* Build configuration list for PBXProject "xNetFuture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = FB6B6AF32A3C350000349B44;
+			productRefGroup = FB6B6AFD2A3C350000349B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB6B6AFB2A3C350000349B44 /* xNetFuture */,
+				FB3D48672A8E3DF700B2671F /* xFutureTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB3D48662A8E3DF700B2671F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6B6AFA2A3C350000349B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B6B3C2A3C456100349B44 /* geoip.dat in Resources */,
+				FB6B6B062A3C350100349B44 /* Assets.xcassets in Resources */,
+				FB6B6B092A3C350100349B44 /* Main.storyboard in Resources */,
+				FB6B6B3D2A3C456100349B44 /* geosite.dat in Resources */,
+				FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		850AFAF67A35CBA280939C04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xNetFuture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23998363168DED0E1A64535 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xNetFuture/Pods-xNetFuture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xNetFuture/Pods-xNetFuture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xNetFuture/Pods-xNetFuture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB3D48642A8E3DF700B2671F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3D486E2A8E3DF800B2671F /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6B6AF82A3C350000349B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */,
+				FB6B6B0B2A3C350100349B44 /* main.m in Sources */,
+				FB6B6B012A3C350000349B44 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB3D48722A8E3DF800B2671F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3D48672A8E3DF700B2671F /* xFutureTunnel */;
+			targetProxy = FB3D48712A8E3DF800B2671F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB6B6B072A3C350100349B44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6B6B082A3C350100349B44 /* Base */,
+				FB6B6B392A3C445200349B44 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB3D48752A8E3DF800B2671F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = xFutureTunnel/xFutureTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xFutureTunnel",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xFutureTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = xFutureTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.linkv.xNetFuture.xFutureTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		FB3D48762A8E3DF800B2671F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = xFutureTunnel/xFutureTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xFutureTunnel",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = xFutureTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = xFutureTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.linkv.xNetFuture.xFutureTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		FB6B6B0D2A3C350100349B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FB6B6B0E2A3C350100349B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB6B6B102A3C350100349B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4FB235D9E89FD0CC7F5E9F /* Pods-xNetFuture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = xNetFuture/xNetFuture.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.linkv.xNetFuture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		FB6B6B112A3C350100349B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C433548FDA88549F543C1B12 /* Pods-xNetFuture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = xNetFuture/xNetFuture.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C48KFNDY4D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.linkv.xNetFuture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB3D48742A8E3DF800B2671F /* Build configuration list for PBXNativeTarget "xFutureTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3D48752A8E3DF800B2671F /* Debug */,
+				FB3D48762A8E3DF800B2671F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6B6AF72A3C350000349B44 /* Build configuration list for PBXProject "xNetFuture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6B6B0D2A3C350100349B44 /* Debug */,
+				FB6B6B0E2A3C350100349B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6B6B0F2A3C350100349B44 /* Build configuration list for PBXNativeTarget "xNetFuture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6B6B102A3C350100349B44 /* Debug */,
+				FB6B6B112A3C350100349B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB6B6AF42A3C350000349B44 /* Project object */;
+}

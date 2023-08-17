@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="YDVPNListItem">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="cBW-Rw-khg">
+                    <rect key="frame" x="1" y="4" width="398" height="94"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GtD-Jg-lnh">
+                            <rect key="frame" x="341" y="42" width="54" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="n44-Fr-ZiD"/>
+                                <constraint firstAttribute="height" constant="10" id="yqx-pK-Xio"/>
+                            </constraints>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="200ms" id="a3P-VD-hRu">
+                                <font key="font" metaFont="system" size="10"/>
+                                <color key="textColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GtD-Jg-lnh" firstAttribute="centerY" secondItem="cBW-Rw-khg" secondAttribute="centerY" id="37z-zP-qQA"/>
+                        <constraint firstAttribute="trailing" secondItem="GtD-Jg-lnh" secondAttribute="trailing" constant="5" id="v2D-xp-mRa"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mJl-Eg-Fi8">
+                    <rect key="frame" x="41" y="43" width="144" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="0SR-MO-tHJ"/>
+                        <constraint firstAttribute="height" constant="16" id="tmV-MP-oVO"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="中ID叫撒放i就打死哦放假哦啊思达；i建峰i；ods" id="lbq-83-YvQ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="LaB-hd-CSU">
+                    <rect key="frame" x="375" y="41" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="5w7-0S-feJ"/>
+                        <constraint firstAttribute="height" constant="20" id="zv7-Mb-fW4"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="minus-circle" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="T1j-QT-W55">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteButtonClick:" target="c22-O7-iKe" id="ssI-OQ-tzv"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-xn-mCZ">
+                    <rect key="frame" x="8" y="41" width="28" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4dI-kC-jUy"/>
+                        <constraint firstAttribute="width" constant="28" id="Hd7-Br-EtF"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="YAw-iK-7P5"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LaB-hd-CSU" secondAttribute="trailing" constant="5" id="CsD-3x-a9P"/>
+                <constraint firstItem="cBW-Rw-khg" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="4" id="L85-Pk-8cK"/>
+                <constraint firstItem="gjQ-xn-mCZ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="WoP-ZU-VtS"/>
+                <constraint firstAttribute="trailing" secondItem="cBW-Rw-khg" secondAttribute="trailing" constant="1" id="Y1f-ju-8r6"/>
+                <constraint firstAttribute="bottom" secondItem="cBW-Rw-khg" secondAttribute="bottom" constant="4" id="ccP-fb-xiI"/>
+                <constraint firstItem="gjQ-xn-mCZ" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="dBG-CN-FSM"/>
+                <constraint firstItem="cBW-Rw-khg" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="1" id="eeM-Ev-Kd6"/>
+                <constraint firstItem="LaB-hd-CSU" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="jfT-lA-9qe"/>
+                <constraint firstItem="mJl-Eg-Fi8" firstAttribute="leading" secondItem="gjQ-xn-mCZ" secondAttribute="trailing" constant="7" id="oLC-Ve-ZR6"/>
+                <constraint firstItem="mJl-Eg-Fi8" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="st3-n1-cuh"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundView" destination="cBW-Rw-khg" id="eeS-e9-LKV"/>
+                <outlet property="deleteButton" destination="LaB-hd-CSU" id="dG6-ug-FJ6"/>
+                <outlet property="logoImageView" destination="gjQ-xn-mCZ" id="lEr-st-pfA"/>
+                <outlet property="pingLabel" destination="GtD-Jg-lnh" id="NXF-FT-in8"/>
+                <outlet property="remarkLab" destination="mJl-Eg-Fi8" id="IkN-yl-NqQ"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="29"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="minus-circle" width="43" height="43"/>
+    </resources>
+</document>
