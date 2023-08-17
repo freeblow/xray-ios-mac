@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,9 +26,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCF-2n-Nh6">
-                                <rect key="frame" x="151.66666666666666" y="743" width="90" height="35"/>
+                                <rect key="frame" x="96.666666666666686" y="743" width="200" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Dc3-7l-O5x"/>
+                                    <constraint firstAttribute="width" constant="200" id="Dc3-7l-O5x"/>
                                     <constraint firstAttribute="height" constant="35" id="oXT-y0-TYI"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -47,15 +48,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-Tz-6Uy">
-                                <rect key="frame" x="154" y="697" width="120" height="21"/>
+                                <rect key="frame" x="154" y="697" width="180" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="464-vX-qSz"/>
+                                    <constraint firstAttribute="width" constant="180" id="464-vX-qSz"/>
                                     <constraint firstAttribute="height" constant="21" id="y4S-iy-MjL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7N-5j-g9d">
+                                <rect key="frame" x="159" y="626" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="XGv-WL-gpF"/>
+                                    <constraint firstAttribute="height" constant="35" id="xEW-hz-An4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Echo"/>
+                                <connections>
+                                    <action selector="echoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlZ-kU-Azi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,7 +78,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UbF-Fc-ox1" secondAttribute="trailing" constant="40" id="7EK-7I-ahE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xi5-el-8dn" secondAttribute="bottom" constant="100" id="8Xw-6e-72W"/>
                             <constraint firstItem="4pb-Tz-6Uy" firstAttribute="leading" secondItem="Xi5-el-8dn" secondAttribute="trailing" constant="30" id="DjH-8O-sm8"/>
+                            <constraint firstItem="t7N-5j-g9d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J2k-pc-F3j"/>
                             <constraint firstItem="Xi5-el-8dn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="UJz-9i-ay5"/>
+                            <constraint firstItem="4pb-Tz-6Uy" firstAttribute="top" secondItem="t7N-5j-g9d" secondAttribute="bottom" constant="36" id="gmF-Bn-Aw8"/>
                             <constraint firstItem="OCF-2n-Nh6" firstAttribute="top" secondItem="4pb-Tz-6Uy" secondAttribute="bottom" constant="25" id="mxK-br-LjO"/>
                             <constraint firstItem="OCF-2n-Nh6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="npf-B6-scX"/>
                             <constraint firstItem="UbF-Fc-ox1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="wO2-le-kMA"/>
@@ -74,6 +89,7 @@
                     <connections>
                         <outlet property="protocolTextField" destination="UbF-Fc-ox1" id="3IX-xP-Mjb"/>
                         <outlet property="startConnectButton" destination="OCF-2n-Nh6" id="nj7-yE-59i"/>
+                        <outlet property="statusLab" destination="4pb-Tz-6Uy" id="Vh0-fN-d7K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

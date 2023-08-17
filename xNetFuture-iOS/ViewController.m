@@ -37,6 +37,9 @@
         }
     }];
     self.protocolTextField.delegate = self;
+    
+//    TODO: This is protocol address
+    self.protocolTextField.text = @"";
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField {
@@ -56,7 +59,7 @@
             self.statusLab.text = @"Connected";
             
             [self.startConnectButton setTitle:@"Disconnect" forState:UIControlStateNormal];
-            self.startConnectButton.layer.backgroundColor = [UIColor systemRedColor].CGColor;
+            [self.startConnectButton setTitleColor:UIColor.redColor forState:UIControlStateNormal];
         }
             break;
             
@@ -69,9 +72,8 @@
         case NEVPNStatusDisconnected:{
             self.statusLab.textColor = [UIColor systemRedColor];
             self.statusLab.text = @"Disconnected";
-            
             [self.startConnectButton setTitle:@"Connect" forState:UIControlStateNormal];
-            self.startConnectButton.layer.backgroundColor = [UIColor colorWithRed:2/255.0 green:187/255.0 blue:0/255.0 alpha:1.0].CGColor;
+            [self.startConnectButton setTitleColor:UIColor.systemGreenColor forState:UIControlStateNormal];
         }
             break;
             
@@ -92,6 +94,46 @@
 }
 
 - (IBAction)startConnectButtonClick:(id)sender {
+    if (!_providerManager) {
+        return;
+    }
+    NETunnelProviderSession *session = (NETunnelProviderSession *)_providerManager.connection;
+    NSString *title = [self.startConnectButton titleForState:UIControlStateNormal];
+    if ([title isEqualToString:NSLocalizedString(@"Connect", nil)]) {
+        NSString *uri = self.protocolTextField.text;
+        NSError *error;
+        
+        BOOL isGlobalMode = YES;
+        
+        NSDictionary *providerConfiguration = @{@"type":@(0), @"uri":uri, @"global":@(isGlobalMode)};
+        NETunnelProviderProtocol *protocolConfiguration = (NETunnelProviderProtocol *)_providerManager.protocolConfiguration;
+        NSMutableDictionary *copy = protocolConfiguration.providerConfiguration.mutableCopy;
+        copy[@"configuration"] = providerConfiguration;
+        protocolConfiguration.providerConfiguration = copy;
+        [_providerManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"saveToPreferencesWithCompletionHandler:%@", error);
+            }
+        }];
+        [session startVPNTunnelWithOptions:@{@"uri":uri, @"global":@(isGlobalMode)} andReturnError:&error];
+        if (error) {
+            NSLog(@"%@", error);
+        }
+    }
+    else {
+        [session stopVPNTunnel];
+    }
+}
+
+- (IBAction)echoButton:(id)sender {
+        NETunnelProviderSession *connection = (NETunnelProviderSession *)_providerManager.connection;
+        NSDictionary *echo = @{@"type":@1};
+        [connection sendProviderMessage:[NSJSONSerialization dataWithJSONObject:echo options:(NSJSONWritingPrettyPrinted) error:nil] returnError:nil responseHandler:^(NSData * _Nullable responseData) {
+    
+            NSString *x = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+            NSLog(@"%@", x);
+    
+        }];
 }
 
 @end
