@@ -25,8 +25,6 @@
 		FB3D48992A8E5F5A00B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
 		FB3D489A2A8E5F7200B2671F /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
 		FB3D489B2A8E5F7200B2671F /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
-		FB3D489D2A8E5FBE00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
-		FB3D489E2A8E5FBE00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
 		FB3D48A72A8E600100B2671F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48A62A8E600100B2671F /* AppDelegate.m */; };
 		FB3D48AA2A8E600100B2671F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48A92A8E600100B2671F /* SceneDelegate.m */; };
 		FB3D48AD2A8E600100B2671F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48AC2A8E600100B2671F /* ViewController.m */; };
@@ -34,7 +32,6 @@
 		FB3D48B22A8E600200B2671F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3D48B12A8E600200B2671F /* Assets.xcassets */; };
 		FB3D48B52A8E600200B2671F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D48B32A8E600200B2671F /* LaunchScreen.storyboard */; };
 		FB3D48B82A8E600200B2671F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48B72A8E600200B2671F /* main.m */; };
-		FB3D48BC2A8E600E00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
 		FB3D48BD2A8E601900B2671F /* ProtocolParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */; };
 		FB3D48BE2A8E601900B2671F /* LVFutureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */; };
 		FB3D48C02A8E60E900B2671F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48BF2A8E60E400B2671F /* libresolv.tbd */; };
@@ -42,7 +39,6 @@
 		FB3D48C72A8E618500B2671F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */; };
 		FB3D48D12A8E618500B2671F /* xFutureTunnel-iOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB3D48C62A8E618500B2671F /* xFutureTunnel-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FB3D48D52A8E61A300B2671F /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */; };
-		FB3D48D62A8E61AB00B2671F /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D489C2A8E5FBE00B2671F /* Future.xcframework */; };
 		FB3D48D72A8E61AB00B2671F /* geoip.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3A2A3C456100349B44 /* geoip.dat */; };
 		FB3D48D82A8E61AB00B2671F /* geosite.dat in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B3B2A3C456100349B44 /* geosite.dat */; };
 		FB3D48D92A8E63D100B2671F /* YDVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D48802A8E5E7C00B2671F /* YDVPNManager.m */; };
@@ -57,6 +53,10 @@
 		FB6B6B2E2A3C36B800349B44 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2C2A3C36B800349B44 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */; };
 		FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B362A3C3E8B00349B44 /* ViewController.m */; };
+		FBC689A22AA8538C00940B09 /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC689A12AA8538C00940B09 /* Future.xcframework */; };
+		FBC689A32AA8538C00940B09 /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC689A12AA8538C00940B09 /* Future.xcframework */; };
+		FBC689A42AA8538C00940B09 /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC689A12AA8538C00940B09 /* Future.xcframework */; };
+		FBC689A52AA8538C00940B09 /* Future.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC689A12AA8538C00940B09 /* Future.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,7 +141,6 @@
 		FB3D48932A8E5F5A00B2671F /* LVFutureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVFutureManager.m; sourceTree = "<group>"; };
 		FB3D48942A8E5F5A00B2671F /* ProtocolParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolParser.m; sourceTree = "<group>"; };
 		FB3D48952A8E5F5A00B2671F /* ProtocolParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolParser.h; sourceTree = "<group>"; };
-		FB3D489C2A8E5FBE00B2671F /* Future.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Future.xcframework; path = xNetFuture/Future.xcframework; sourceTree = SOURCE_ROOT; };
 		FB3D48A32A8E600100B2671F /* xNetFuture-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xNetFuture-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D48A52A8E600100B2671F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB3D48A62A8E600100B2671F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +172,7 @@
 		FB6B6B392A3C445200349B44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		FB6B6B3A2A3C456100349B44 /* geoip.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geoip.dat; sourceTree = "<group>"; };
 		FB6B6B3B2A3C456100349B44 /* geosite.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = geosite.dat; sourceTree = "<group>"; };
+		FBC689A12AA8538C00940B09 /* Future.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Future.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 			files = (
 				FB3D486A2A8E3DF700B2671F /* NetworkExtension.framework in Frameworks */,
 				FB3D487F2A8E3EBC00B2671F /* libresolv.tbd in Frameworks */,
-				FB3D489E2A8E5FBE00B2671F /* Future.xcframework in Frameworks */,
+				FBC689A32AA8538C00940B09 /* Future.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3D48BC2A8E600E00B2671F /* Future.xcframework in Frameworks */,
+				FBC689A42AA8538C00940B09 /* Future.xcframework in Frameworks */,
 				FB3D48C02A8E60E900B2671F /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,9 +199,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3D48D62A8E61AB00B2671F /* Future.xcframework in Frameworks */,
 				FB3D48C72A8E618500B2671F /* NetworkExtension.framework in Frameworks */,
 				FB3D48DC2A8E640400B2671F /* libresolv.tbd in Frameworks */,
+				FBC689A52AA8538C00940B09 /* Future.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,10 +209,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC689A22AA8538C00940B09 /* Future.xcframework in Frameworks */,
 				FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */,
 				32A5CDD2E7B3ADF8728276D5 /* Pods_xNetFuture.framework in Frameworks */,
 				FB3D485F2A8E28E200B2671F /* libresolv.tbd in Frameworks */,
-				FB3D489D2A8E5FBE00B2671F /* Future.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 			children = (
 				FB3D486C2A8E3DF800B2671F /* PacketTunnelProvider.h */,
 				FB3D486D2A8E3DF800B2671F /* PacketTunnelProvider.m */,
-				FB3D489C2A8E5FBE00B2671F /* Future.xcframework */,
+				FBC689A12AA8538C00940B09 /* Future.xcframework */,
 				FB6B6B3A2A3C456100349B44 /* geoip.dat */,
 				FB6B6B3B2A3C456100349B44 /* geosite.dat */,
 				FB3D486F2A8E3DF800B2671F /* Info.plist */,

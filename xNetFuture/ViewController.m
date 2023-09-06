@@ -95,7 +95,7 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     [super viewDidLoad];
     // Do view setup here.
     self.vpnTextField.delegate = self;
-    self.vpnTextField.stringValue = @"";
+    self.vpnTextField.stringValue = @"vmess://eyJob3N0Ijoic2NvcnBpaS53ZWx0a25vdGVuLnh5eiIsInBhdGgiOiIiLCJ0bHMiOiJ0bHMiLCJ2ZXJpZnlfY2VydCI6dHJ1ZSwiYWRkIjoic2NvcnBpaS53ZWx0a25vdGVuLnh5eiIsInBvcnQiOjMwMDIwLCJhaWQiOjIsIm5ldCI6InRjcCIsImhlYWRlclR5cGUiOiJub25lIiwidiI6IjIiLCJ0eXBlIjoibm9uZSIsInBzIjoiVklQLXYycmF5LUhvbmcgS29uZyAwNSIsInJlbWFyayI6IlZJUC12MnJheS1Ib25nIEtvbmcgMDUiLCJpZCI6IjFlOTYzZWZhLWMwOTktM2E3ZC1iZjQ3LTY0ZGI0ZWE0NmM4ZSIsImNsYXNzIjozfQ==";
     self.startConnectButton.wantsLayer = YES;
     self.startConnectButton.layer.backgroundColor = [NSColor colorWithRed:2/255.0 green:187/255.0 blue:0/255.0 alpha:1.0].CGColor;
     self.startConnectButton.contentTintColor = [NSColor whiteColor];
@@ -318,14 +318,14 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
 
 - (IBAction)add2ListView:(id)sender {
 //    ECHO Test
-//    NETunnelProviderSession *connection = (NETunnelProviderSession *)_providerManager.connection;
-//    NSDictionary *echo = @{@"type":@1};
-//    [connection sendProviderMessage:[NSJSONSerialization dataWithJSONObject:echo options:(NSJSONWritingPrettyPrinted) error:nil] returnError:nil responseHandler:^(NSData * _Nullable responseData) {
-//
-//        NSString *x = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-//        NSLog(@"%@", x);
-//
-//    }];
+    NETunnelProviderSession *connection = (NETunnelProviderSession *)_providerManager.connection;
+    NSDictionary *echo = @{@"type":@1};
+    [connection sendProviderMessage:[NSJSONSerialization dataWithJSONObject:echo options:(NSJSONWritingPrettyPrinted) error:nil] returnError:nil responseHandler:^(NSData * _Nullable responseData) {
+
+        NSString *x = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", x);
+
+    }];
     if (!currentConfiguration) {
         [_delegate makeToast:NSLocalizedString(@"Configuration Invaild", nil)];
         return;

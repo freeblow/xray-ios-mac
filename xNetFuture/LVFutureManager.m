@@ -103,7 +103,8 @@
 }
 
 + (NSString *)ping:(NSString *)ips {
-    return FuturePing(ips);
+//    return FuturePing(ips);
+    return @"";
 }
 
 +(void)setSocks5Enable:(BOOL)socks5Enable {
@@ -125,16 +126,7 @@
 }
 
 - (BOOL)setupURL:(NSString *)payload {
-    NSError *err;
-    NSData *x = FutureRSADecrypt(payload, &err);
-    NSString *url;
-    if (err || !x) {
-        url = payload;
-    }
-    else {
-        url = [[NSString alloc] initWithData:x encoding:NSUTF8StringEncoding];
-    }
-    NSDictionary *configuration = [LVFutureManager parseURI:url];
+    NSDictionary *configuration = [LVFutureManager parseURI:payload];
     if (!configuration) return NO;
     self.xray = configuration;
     return YES;
@@ -242,12 +234,9 @@
         return completionHandler(error);
     }
     __weak LVFutureManager *weakSelf = self;
-    
-    NSString *appId = options[@"appId"] ? options[@"appId"] : @"GO";
-    NSString *userId = options[@"userId"] ? options[@"userId"] : @"GO";
-    
     NSData *c = [NSJSONSerialization dataWithJSONObject:self.xray options:NSJSONWritingPrettyPrinted error:nil];
-    FutureStartVPN(appId, userId, c, self);
+    FutureStartVPN(c, self);
+    NSLog(@"vpn configuration: %@", self.xray);
     
 #if VPN_USE_TUN2SOCKS
     FutureRegisterAppleNetworkInterface(self);
@@ -323,20 +312,18 @@
 #endif
 
 - (void)getStats {
-    int64_t downlink = FutureQueryStats(@"proxy", @"downlink");
-    int64_t uplink = FutureQueryStats(@"proxy", @"uplink");
-    if ([self.delegate respondsToSelector:@selector(onConnectionSpeedReport:uplink:)]) {
-        [self.delegate onConnectionSpeedReport:downlink uplink:NO];
-        [self.delegate onConnectionSpeedReport:uplink uplink:YES];
-    }
+//    int64_t downlink = FutureQueryStats(@"proxy", @"downlink");
+//    int64_t uplink = FutureQueryStats(@"proxy", @"uplink");
+//    if ([self.delegate respondsToSelector:@selector(onConnectionSpeedReport:uplink:)]) {
+//        [self.delegate onConnectionSpeedReport:downlink uplink:NO];
+//        [self.delegate onConnectionSpeedReport:uplink uplink:YES];
+//    }
 }
 
 #if ENABLE_APPLICATION_VPN
 - (void)startTunnelWithOptions:(nullable NSDictionary *)options configuration:(NSDictionary *)configuration {
-    NSString *appId = options[@"appId"] ? options[@"appId"] : @"GO";
-    NSString *userId = options[@"userId"] ? options[@"userId"] : @"GO";
     NSData *c = [NSJSONSerialization dataWithJSONObject:configuration options:NSJSONWritingPrettyPrinted error:nil];
-    FutureStartVPN(appId, userId, c, self);
+    FutureStartVPN(c, self);
 }
 
 - (void)stopTunnelWithReason {
