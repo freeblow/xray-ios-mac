@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#import <YoFuture/YoFuture.h>
 #import <MMKV/MMKV.h>
 
 @interface AppDelegate ()
@@ -23,7 +22,7 @@
     // Insert code here to initialize your application
     
     [MMKV initializeMMKV:self.defaultDocDir];
-    const char* cryptoKey = "lovelike08150802";
+    const char* cryptoKey = "lovelike08150802x";
     _defaultMMKV = [MMKV defaultMMKVWithCryptKey:[NSData dataWithBytesNoCopy:(void *)cryptoKey length:16 freeWhenDone:NO]];
 }
 

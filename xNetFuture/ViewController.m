@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
-#import <YoFuture/YoFuture.h>
 #import <Masonry/Masonry.h>
 #import <CoreImage/CIFilterBuiltins.h>
 #import <NetworkExtension/NetworkExtension.h>
 #import "AppDelegate.h"
 #import "YDVPNManager.h"
+#import "YDVTextField.h"
+#import "YDXButton.h"
+#import "YDVPNListItem.h"
+#import "YDProtocolParser.h"
 
 @interface NSData (XBase64)
 + (NSData *)dataWithBase64EncodedStringx:(NSString *)string;

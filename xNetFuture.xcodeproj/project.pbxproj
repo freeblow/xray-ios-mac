@@ -55,8 +55,6 @@
 		FB6B6B0B2A3C350100349B44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B0A2A3C350100349B44 /* main.m */; };
 		FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2C2A3C36B800349B44 /* Masonry.framework */; };
 		FB6B6B2E2A3C36B800349B44 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2C2A3C36B800349B44 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FB6B6B302A3C36BC00349B44 /* YoFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */; };
-		FB6B6B312A3C36BC00349B44 /* YoFuture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB6B6B352A3C39C100349B44 /* YDVPNListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */; };
 		FB6B6B382A3C3E8B00349B44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6B362A3C3E8B00349B44 /* ViewController.m */; };
 /* End PBXBuildFile section */
@@ -108,7 +106,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FB6B6B2E2A3C36B800349B44 /* Masonry.framework in Embed Frameworks */,
-				FB6B6B312A3C36BC00349B44 /* YoFuture.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +167,6 @@
 		FB6B6B0A2A3C350100349B44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB6B6B0C2A3C350100349B44 /* xNetFuture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xNetFuture.entitlements; sourceTree = "<group>"; };
 		FB6B6B2C2A3C36B800349B44 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B6B342A3C39C100349B44 /* YDVPNListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDVPNListItem.xib; sourceTree = "<group>"; };
 		FB6B6B362A3C3E8B00349B44 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB6B6B372A3C3E8B00349B44 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -213,7 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6B6B302A3C36BC00349B44 /* YoFuture.framework in Frameworks */,
 				FB6B6B2D2A3C36B800349B44 /* Masonry.framework in Frameworks */,
 				32A5CDD2E7B3ADF8728276D5 /* Pods_xNetFuture.framework in Frameworks */,
 				FB3D485F2A8E28E200B2671F /* libresolv.tbd in Frameworks */,
@@ -338,7 +333,6 @@
 				FB3D48BF2A8E60E400B2671F /* libresolv.tbd */,
 				FB3D485D2A8E28BA00B2671F /* libresolv.9.tbd */,
 				FB3D485C2A8E28B200B2671F /* libiconv.2.4.0.tbd */,
-				FB6B6B2F2A3C36BC00349B44 /* YoFuture.framework */,
 				FB6B6B2C2A3C36B800349B44 /* Masonry.framework */,
 				1D6CE664E05A99EA280E02A6 /* Pods_xNetFuture.framework */,
 				FB3D48692A8E3DF700B2671F /* NetworkExtension.framework */,
