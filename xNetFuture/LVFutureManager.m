@@ -231,7 +231,13 @@
     }
     __weak LVFutureManager *weakSelf = self;
     NSData *c = [NSJSONSerialization dataWithJSONObject:self.xray options:NSJSONWritingPrettyPrinted error:nil];
-    FutureStartVPN(c, self);
+    NSString *r = FutureStartVPN(c, self);
+    if (r.length > 0){
+        NSError *error = [NSError errorWithDomain:@"Invalid json" code:204 userInfo:nil];
+        completionHandler(error);
+        return;
+    }
+    
     NSLog(@"vpn configuration: %@", self.xray);
     
 #if VPN_USE_TUN2SOCKS

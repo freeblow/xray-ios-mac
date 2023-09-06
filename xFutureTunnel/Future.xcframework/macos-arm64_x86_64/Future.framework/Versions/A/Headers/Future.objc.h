@@ -233,7 +233,7 @@ FOUNDATION_EXPORT void FutureRegisterAppleNetworkInterface(id<FutureAppleNetwork
 // skipped function StartInstance with unsupported parameter or return types
 
 
-FOUNDATION_EXPORT void FutureStartVPN(NSData* _Nullable configuration, id<FuturePlatformWriter> _Nullable writer);
+FOUNDATION_EXPORT NSString* _Nonnull FutureStartVPN(NSData* _Nullable configuration, id<FuturePlatformWriter> _Nullable writer);
 
 FOUNDATION_EXPORT void FutureStopVPN(void);
 

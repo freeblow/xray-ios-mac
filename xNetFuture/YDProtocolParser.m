@@ -362,7 +362,13 @@ static NSMutableArray *__blockDomainList__ = nil;
     }
     NSString *address = info[@"add"];
     NSNumber *port = info[@"port"];
+    if (port && ![port isKindOfClass:NSNumber.class]) {
+        port = @(port.integerValue);
+    }
     NSNumber *aid = info[@"aid"] ? info[@"aid"] : @0;
+    if (![aid isKindOfClass:NSNumber.class]) {
+        aid = @(aid.integerValue);
+    }
     NSString *uuid = info[@"id"];
     NSString *tag = info[@"ps"];
     NSString *tls = info[@"tls"] ? info[@"tls"] : @"none";
@@ -469,6 +475,10 @@ static NSMutableArray *__blockDomainList__ = nil;
     NSMutableArray *outbounds = [NSMutableArray new];
     configuration[@"outbounds"] = outbounds;
     NSMutableDictionary *outbound = @{
+        @"mux": @{
+            @"concurrency": @8,
+            @"enabled": [NSNumber numberWithBool:false]
+        },
         @"protocol":@"vmess",
         @"tag":tag,
         @"settings": @{
@@ -478,11 +488,12 @@ static NSMutableArray *__blockDomainList__ = nil;
                     @"port":port,
                     @"users" :@[
                         @{
-                            @"encryption":@"none",
+                            @"encryption":@"",
                             @"security":@"auto",
                             @"alterId":aid,
                             @"id":uuid,
-                            @"flow":@""
+                            @"flow":@"",
+                            @"level":@8
                         }
                     ]
                 }
@@ -490,7 +501,12 @@ static NSMutableArray *__blockDomainList__ = nil;
         },
         @"streamSettings" : @{
             @"security" : tls,
-            @"network" : network
+            @"network" : network,
+            @"tcpSettings": @{
+                @"header": @{
+                    @"type": @"none"
+                }
+            }
         }
     }.mutableCopy;
     
@@ -563,6 +579,14 @@ static NSMutableArray *__blockDomainList__ = nil;
     if (remark) {
         configuration[@"remark"] = remark;
     }
+    configuration[@"dns"] = @{
+        @"hosts": @{
+          @"domain:googleapis.cn": @"googleapis.com"
+        },
+        @"servers": @[
+          @"1.1.1.1"
+        ]
+    };
     
     return configuration;
 }
