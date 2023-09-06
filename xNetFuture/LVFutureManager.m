@@ -10,7 +10,7 @@
 #include <dns.h>
 #include <resolv.h>
 #import <Future/Future.h>
-#import "ProtocolParser.h"
+#import "YDProtocolParser.h"
 #import <arpa/inet.h>
 #import <mach/mach.h>
 #import <resolv.h>
@@ -60,25 +60,25 @@
 + (void)setLogLevel:(xLogLevel)level{
     switch (level) {
         case xLogLevelVerbose:
-            [ProtocolParser setLogLevel:@"verbose"];
+            [YDProtocolParser setLogLevel:@"verbose"];
             break;
             
         case xLogLevelWarning:
-            [ProtocolParser setLogLevel:@"warning"];
+            [YDProtocolParser setLogLevel:@"warning"];
             break;
             
         case xLogLevelInfo:
-            [ProtocolParser setLogLevel:@"info"];
+            [YDProtocolParser setLogLevel:@"info"];
             break;
             
         case xLogLevelError:
-            [ProtocolParser setLogLevel:@"error"];
+            [YDProtocolParser setLogLevel:@"error"];
             break;
     }
 }
 
 + (void)setGlobalProxyEnable:(BOOL)enable {
-    [ProtocolParser setGlobalProxyEnable:enable];
+    [YDProtocolParser setGlobalProxyEnable:enable];
     NSString *file = [[NSBundle mainBundle] pathForResource:@"geosite" ofType:@"dat"];
     if (file && [[NSFileManager defaultManager] fileExistsAtPath:file]) {
         NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/"];
@@ -87,28 +87,24 @@
 }
 
 + (void)setHttpProxyPort:(uint16_t)port {
-    [ProtocolParser setHttpProxyPort:port];
+    [YDProtocolParser setHttpProxyPort:port];
 }
 
 + (void)setDirectDomainList:(NSArray *)list {
-    [ProtocolParser setDirectDomainList:list];
+    [YDProtocolParser setDirectDomainList:list];
 }
 
 + (void)setProxyDomainList:(NSArray *)list {
-    [ProtocolParser setProxyDomainList:list];
+    [YDProtocolParser setProxyDomainList:list];
 }
 
 + (void)setBlockDomainList:(NSArray *)list {
-    [ProtocolParser setBlockDomainList:list];
+    [YDProtocolParser setBlockDomainList:list];
 }
 
 + (NSString *)ping:(NSString *)ips {
 //    return FuturePing(ips);
     return @"";
-}
-
-+(void)setSocks5Enable:(BOOL)socks5Enable {
-    [ProtocolParser setSocks5Enable:socks5Enable];
 }
 
 - (void)setup {
@@ -147,7 +143,7 @@
     else {
         return nil;
     }
-    NSDictionary *configuration = [ProtocolParser parse:list[1] protocol:protocol];
+    NSDictionary *configuration = [YDProtocolParser parse:list[1] protocol:protocol];
     return configuration;
 }
 +(NSString *)version {
@@ -192,7 +188,7 @@
     networkSettings.IPv4Settings = ipv4Settings;
     
     NEProxySettings *proxySettings = [NEProxySettings new];
-    NEProxyServer *http = [[NEProxyServer alloc] initWithAddress:@"127.0.0.1" port:[ProtocolParser HttpProxyPort]];
+    NEProxyServer *http = [[NEProxyServer alloc] initWithAddress:@"127.0.0.1" port:[YDProtocolParser HttpProxyPort]];
     proxySettings.HTTPEnabled = YES;
     proxySettings.HTTPSEnabled = YES;
     proxySettings.HTTPServer = http;

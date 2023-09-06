@@ -148,21 +148,6 @@ static NSMutableArray *__blockDomainList__ = nil;
         };
         [rules addObject:A];
     }
-    
-    if (__directDomainList__.count == 0) {
-        __directDomainList__ = @[].mutableCopy;
-    }
-    [__directDomainList__ addObjectsFromArray:@[@"linkv.sg", @"joyme.sg"]];
-    
-    
-    if (__directDomainList__.count > 0) {
-        NSDictionary *A = @{
-            @"type": @"field",
-            @"domain": __directDomainList__,
-            @"outboundTag": @"direct"
-        };
-        [rules addObject:A];
-    }
 
     if (__blockDomainList__.count > 0) {
         NSDictionary *A = @{
@@ -409,20 +394,7 @@ static NSMutableArray *__blockDomainList__ = nil;
         };
         [rules addObject:A];
     }
-    if (__directDomainList__.count == 0) {
-        __directDomainList__ = @[].mutableCopy;
-    }
-    [__directDomainList__ addObjectsFromArray:@[@"linkv.sg", @"joyme.sg"]];
     
-    if (__directDomainList__.count > 0) {
-        NSDictionary *A = @{
-            @"type": @"field",
-            @"domain": __directDomainList__,
-            @"outboundTag": @"direct"
-        };
-        [rules addObject:A];
-    }
-
     if (__blockDomainList__.count > 0) {
         NSDictionary *A = @{
             @"type": @"field",
@@ -479,21 +451,6 @@ static NSMutableArray *__blockDomainList__ = nil;
         @"rules" : rules
     };
     
-    configuration[@"stats"] = @{};
-    configuration[@"policy"] = @{
-        @"levels": @{
-            @"0": @{
-                @"statsUserUplink": [NSNumber numberWithBool:true],
-                @"statsUserDownlink": [NSNumber numberWithBool:true]
-            }
-        },
-        @"system": @{
-            @"statsInboundUplink": [NSNumber numberWithBool:true],
-            @"statsInboundDownlink": [NSNumber numberWithBool:true],
-            @"statsOutboundUplink": [NSNumber numberWithBool:true],
-            @"statsOutboundDownlink": [NSNumber numberWithBool:true]
-        }
-    };
 
     NSMutableArray *inbounds = [NSMutableArray new];
     configuration[@"inbounds"] = inbounds;
@@ -603,11 +560,6 @@ static NSMutableArray *__blockDomainList__ = nil;
     };
     [outbounds addObject:direct];
     [outbounds addObject:block];
-    
-    NSMutableDictionary *dns = @{}.mutableCopy;
-    dns[@"servers"] = @[];
-    configuration[@"dns"] = dns;
-    
     if (remark) {
         configuration[@"remark"] = remark;
     }

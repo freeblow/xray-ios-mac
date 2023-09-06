@@ -95,7 +95,8 @@ NSString *const kYDApplicationVPNListKey = @"kYDApplicationVPNListKey";
     [super viewDidLoad];
     // Do view setup here.
     self.vpnTextField.delegate = self;
-    self.vpnTextField.stringValue = @"vmess://eyJob3N0Ijoic2NvcnBpaS53ZWx0a25vdGVuLnh5eiIsInBhdGgiOiIiLCJ0bHMiOiJ0bHMiLCJ2ZXJpZnlfY2VydCI6dHJ1ZSwiYWRkIjoic2NvcnBpaS53ZWx0a25vdGVuLnh5eiIsInBvcnQiOjMwMDIwLCJhaWQiOjIsIm5ldCI6InRjcCIsImhlYWRlclR5cGUiOiJub25lIiwidiI6IjIiLCJ0eXBlIjoibm9uZSIsInBzIjoiVklQLXYycmF5LUhvbmcgS29uZyAwNSIsInJlbWFyayI6IlZJUC12MnJheS1Ib25nIEtvbmcgMDUiLCJpZCI6IjFlOTYzZWZhLWMwOTktM2E3ZC1iZjQ3LTY0ZGI0ZWE0NmM4ZSIsImNsYXNzIjozfQ==";
+    self.vpnTextField.stringValue = @"vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIl9VU1/nvo7lm70iLA0KICAiYWRkIjogInNpbmdhcG9yZS5jb20iLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNmRlZGRiN2YtZTU1Ny00MmRiLWJmYTAtY2Y0MGIzNmIyN2UyIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJkLmZyZWVoMS54eXoiLA0KICAicGF0aCI6ICIvZG9uZ3RhaXdhbmcuY29tIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0=";
+    NSLog(@"%@", [YDProtocolParser parseURI:self.vpnTextField.stringValue]);
     self.startConnectButton.wantsLayer = YES;
     self.startConnectButton.layer.backgroundColor = [NSColor colorWithRed:2/255.0 green:187/255.0 blue:0/255.0 alpha:1.0].CGColor;
     self.startConnectButton.contentTintColor = [NSColor whiteColor];
