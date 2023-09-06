@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../IMWorkspace/Masonry/Masonry.xcodeproj">
+      location = "group:Masonry/Masonry.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:xNetFuture.xcodeproj">
