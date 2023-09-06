@@ -520,7 +520,11 @@ static NSMutableArray *__blockDomainList__ = nil;
                         @"Host":wshost
                     },
                     @"path":wspath
-                }
+                },
+                @"tlsSettings": @{
+                    @"allowInsecure": @(NO),
+                    @"serverName": wshost
+                },
             };
         }
     }
