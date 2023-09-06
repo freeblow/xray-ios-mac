@@ -152,21 +152,6 @@ static NSMutableArray *__blockDomainList__ = nil;
         };
         [rules addObject:A];
     }
-    
-    if (__directDomainList__.count == 0) {
-        __directDomainList__ = @[].mutableCopy;
-    }
-    [__directDomainList__ addObjectsFromArray:@[@"linkv.sg", @"joyme.sg"]];
-    
-    
-    if (__directDomainList__.count > 0) {
-        NSDictionary *A = @{
-            @"type": @"field",
-            @"domain": __directDomainList__,
-            @"outboundTag": @"direct"
-        };
-        [rules addObject:A];
-    }
 
     if (__blockDomainList__.count > 0) {
         NSDictionary *A = @{
