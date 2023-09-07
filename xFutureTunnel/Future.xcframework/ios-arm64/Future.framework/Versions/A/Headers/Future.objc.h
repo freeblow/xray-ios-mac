@@ -12,11 +12,6 @@
 
 
 @class FutureAndroidPoint;
-@class FutureAppConfiguration;
-@class FutureAppNext;
-@class FutureAppOutbound;
-@class FutureAppSettings;
-@class FutureAppUsers;
 @class FutureAppleUtunHandler;
 @class FutureIOSPoint;
 @class FutureProtectedDialer;
@@ -96,60 +91,6 @@ This is territory of Go, so no getter and setters!
 - (BOOL)stopLoop:(NSError* _Nullable* _Nullable)error;
 @end
 
-@interface FutureAppConfiguration : NSObject <goSeqRefInterface, FutureConn, FutureDestination> {
-}
-@property(strong, readonly) _Nonnull id _ref;
-
-- (nonnull instancetype)initWithRef:(_Nonnull id)ref;
-- (nonnull instancetype)init;
-// skipped field AppConfiguration.Outbounds with unsupported type: []future.AppOutbound
-
-@end
-
-@interface FutureAppNext : NSObject <goSeqRefInterface, FutureConn, FutureDestination> {
-}
-@property(strong, readonly) _Nonnull id _ref;
-
-- (nonnull instancetype)initWithRef:(_Nonnull id)ref;
-- (nonnull instancetype)init;
-@property (nonatomic) NSString* _Nonnull address;
-@property (nonatomic) long port;
-// skipped field AppNext.Users with unsupported type: []future.AppUsers
-
-@end
-
-@interface FutureAppOutbound : NSObject <goSeqRefInterface, FutureConn, FutureDestination> {
-}
-@property(strong, readonly) _Nonnull id _ref;
-
-- (nonnull instancetype)initWithRef:(_Nonnull id)ref;
-- (nonnull instancetype)init;
-@property (nonatomic) NSString* _Nonnull tag;
-@property (nonatomic) NSString* _Nonnull protocol;
-// skipped field AppOutbound.Settings with unsupported type: future.AppSettings
-
-@end
-
-@interface FutureAppSettings : NSObject <goSeqRefInterface, FutureConn, FutureDestination> {
-}
-@property(strong, readonly) _Nonnull id _ref;
-
-- (nonnull instancetype)initWithRef:(_Nonnull id)ref;
-- (nonnull instancetype)init;
-// skipped field AppSettings.Vnext with unsupported type: []future.AppNext
-
-@end
-
-@interface FutureAppUsers : NSObject <goSeqRefInterface, FutureConn, FutureDestination> {
-}
-@property(strong, readonly) _Nonnull id _ref;
-
-- (nonnull instancetype)initWithRef:(_Nonnull id)ref;
-- (nonnull instancetype)init;
-@property (nonatomic) NSString* _Nonnull id_;
-@property (nonatomic) long alterId;
-@end
-
 @interface FutureAppleUtunHandler : NSObject <goSeqRefInterface, FutureAppleWriterPacketFlow, FutureConn, FutureDestination> {
 }
 @property(strong, readonly) _Nonnull id _ref;
@@ -191,8 +132,6 @@ This is territory of Go, so no getter and setters!
 - (BOOL)vpnProtect:(long)p0;
 @end
 
-FOUNDATION_EXPORT long FutureCheckVersion(void);
-
 /**
  * CheckVersionX string
 This func will return libv2ray binding version and V2Ray version used.
@@ -211,8 +150,6 @@ FOUNDATION_EXPORT int64_t FutureGoogle204Delay(void);
  * InitV2Env set v2 asset path
  */
 FOUNDATION_EXPORT void FutureInitV2Env(NSString* _Nullable envPath);
-
-FOUNDATION_EXPORT void FutureInitV2Envx(NSString* _Nullable envPath);
 
 FOUNDATION_EXPORT BOOL FutureMeasureOutboundDelay(NSString* _Nullable ConfigureFileContent, int64_t* _Nullable ret0_, NSError* _Nullable* _Nullable error);
 
